@@ -1,0 +1,55 @@
+.box {
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 24px;
+  font-family: "HarmonyOS Sans", "Inter", "Microsoft YaHei UI",
+    "PingFangSC-Regular", Helvetica, Arial, sans-serif;
+}
+.box h2 {
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #121212;
+}
+.box .grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+}
+.box .grid .item {
+  position: relative;
+  text-align: left;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #ebebeb;
+  border-radius: 12px;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+.box .grid .item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.box .grid .item a:hover {
+  transform: scale(1.5);
+  transition: transform 0.2s ease;
+}
+
+.item h3 {
+  margin-top: 16px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  color: #121212;
+}
+.box .grid .item .desc {
+  margin-top: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-orient: vertical;
+  -ms-flex-direction: column;
+  -webkit-line-clamp: 2;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(60, 60, 67, 0.6);
+}
