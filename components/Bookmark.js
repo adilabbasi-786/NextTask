@@ -9,7 +9,6 @@ const Bookmark = () => {
           <a
             href="https://www.hipdf.com/pdf-editor"
             className={`${styles.item} ${styles.tool}`}
-            ga360location="content_2_buttonLink_22"
           >
             <img
               style={{
@@ -29,7 +28,6 @@ const Bookmark = () => {
           <a
             href="https://www.hipdf.com/crop-pdf"
             className={`${styles.item} ${styles.tool}`}
-            ga360location="content_2_buttonLink_23"
           >
             <img
               style={{
@@ -49,7 +47,6 @@ const Bookmark = () => {
           <a
             href="https://www.hipdf.com/replace-text"
             className={`${styles.item} ${styles.tool}`}
-            ga360location="content_2_buttonLink_24"
           >
             <img
               style={{
@@ -69,7 +66,6 @@ const Bookmark = () => {
           <a
             href="https://www.hipdf.com/rotate-pdf"
             className={`${styles.item} ${styles.tool}`}
-            ga360location="content_2_buttonLink_25"
           >
             <img
               style={{

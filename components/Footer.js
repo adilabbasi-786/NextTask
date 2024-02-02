@@ -3,6 +3,7 @@ import { FaYoutube } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaRegMoon } from "react-icons/fa";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -25,37 +26,37 @@ const Footer = () => {
               className={`${styles.flex} ${styles.items_center} ${styles.gap_8}`}
             >
               <li style={{ listStyle: "none" }}>
-                <a
-                  style={{ color: "#5c5757", textDecoration: "inherit" }}
+                <Link
                   href="https://www.youtube.com/"
+                  style={{ color: "#5c5757", textDecoration: "inherit" }}
                   className="text-text-default hover:text-text-dark"
                 >
                   <i className={styles.icon} style={{ fontSize: "24px" }}>
                     <FaYoutube />
                   </i>
-                </a>
+                </Link>
               </li>
               <li style={{ listStyle: "none" }}>
-                <a
-                  style={{ color: "#5c5757", textDecoration: "inherit" }}
+                <Link
                   href="https://www.twitter.com/"
+                  style={{ color: "#5c5757", textDecoration: "inherit" }}
                   className="text-text-default hover:text-text-dark"
                 >
                   <i className={styles.icon} style={{ fontSize: "24px" }}>
                     <FaTwitter />
                   </i>
-                </a>
+                </Link>
               </li>
               <li style={{ listStyle: "none" }}>
-                <a
-                  style={{ color: "#5c5757", textDecoration: "inherit" }}
+                <Link
                   href="https://www.facebook.com/"
+                  style={{ color: "#5c5757", textDecoration: "inherit" }}
                   className="text-text-default hover:text-text-dark"
                 >
                   <i className={styles.icon} style={{ fontSize: "24px" }}>
                     <FaFacebook />
                   </i>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -89,212 +90,52 @@ const Footer = () => {
               </h3>
               <ul style={{ flexDirection: "column", display: "flex" }}>
                 <li style={{ listStyle: "none" }}>
-                  <a
-                    style={{
-                      color: "black",
-                      lineHeight: "1.5rem",
-                      paddingBottom: "0.5rem",
-                      paddingTop: "0.5rem",
-                      display: "block",
-                      textDecoration: "inherit",
-                    }}
-                    href="/documentaries/"
-                  >
-                    Documentaries
-                  </a>
+                  <Link href="/documentaries/">
+                    <div
+                      style={{
+                        color: "black",
+                        lineHeight: "1.5rem",
+                        paddingBottom: "0.5rem",
+                        paddingTop: "0.5rem",
+                        display: "block",
+                        textDecoration: "inherit",
+                      }}
+                    >
+                      Documentaries
+                    </div>
+                  </Link>
                 </li>
                 <li style={{ listStyle: "none" }}>
-                  <a
-                    style={{
-                      color: "black",
-                      lineHeight: "1.5rem",
-                      paddingBottom: "0.5rem",
-                      paddingTop: "0.5rem",
-                      display: "block",
-                      textDecoration: "inherit",
-                    }}
-                    href="/themes/"
-                  >
-                    Themes
-                  </a>
+                  <Link href="/themes/">
+                    <div
+                      style={{
+                        color: "black",
+                        lineHeight: "1.5rem",
+                        paddingBottom: "0.5rem",
+                        paddingTop: "0.5rem",
+                        display: "block",
+                        textDecoration: "inherit",
+                      }}
+                    >
+                      Themes
+                    </div>
+                  </Link>
                 </li>
                 <li style={{ listStyle: "none" }}>
-                  <a
-                    style={{
-                      color: "black",
-                      lineHeight: "1.5rem",
-                      paddingBottom: "0.5rem",
-                      paddingTop: "0.5rem",
-                      display: "block",
-                      textDecoration: "inherit",
-                    }}
-                    href="#"
-                  >
-                    Chrome casts
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div style={{ flexBasis: "calc(20% - 8px)" }}>
-              <h3
-                style={{
-                  color: "black",
-                  fontWeight: "600",
-                  paddingBottom: "1.5rem",
-                  fontSize: "inherit",
-                }}
-              >
-                Enterprise
-              </h3>
-              <ul style={{ flexDirection: "column", display: "flex" }}>
-                <li style={{ listStyle: "none" }}>
-                  <a
-                    style={{
-                      color: "black",
-                      lineHeight: "1.5rem",
-                      paddingBottom: "0.5rem",
-                      paddingTop: "0.5rem",
-                      display: "block",
-                      textDecoration: "inherit",
-                    }}
-                    href="#"
-                  >
-                    Download Chrome Browser
-                  </a>
-                </li>
-                <li style={{ listStyle: "none" }}>
-                  <a
-                    style={{
-                      color: "black",
-                      lineHeight: "1.5rem",
-                      paddingBottom: "0.5rem",
-                      paddingTop: "0.5rem",
-                      display: "block",
-                      textDecoration: "inherit",
-                    }}
-                    href="#"
-                  >
-                    Chrome Browser for Enterprise
-                  </a>
-                </li>
-                <li style={{ listStyle: "none" }}>
-                  <a
-                    style={{
-                      color: "black",
-                      lineHeight: "1.5rem",
-                      paddingBottom: "0.5rem",
-                      paddingTop: "0.5rem",
-                      display: "block",
-                      textDecoration: "inherit",
-                    }}
-                    href="#"
-                  >
-                    Chrome Browser Devices
-                  </a>
-                </li>
-                <li style={{ listStyle: "none" }}>
-                  <a
-                    style={{
-                      color: "black",
-                      lineHeight: "1.5rem",
-                      paddingBottom: "0.5rem",
-                      paddingTop: "0.5rem",
-                      display: "block",
-                      textDecoration: "inherit",
-                    }}
-                    href="#"
-                  >
-                    ChromeOS
-                  </a>
-                </li>
-                <li style={{ listStyle: "none" }}>
-                  <a
-                    style={{
-                      color: "black",
-                      lineHeight: "1.5rem",
-                      paddingBottom: "0.5rem",
-                      paddingTop: "0.5rem",
-                      display: "block",
-                      textDecoration: "inherit",
-                    }}
-                    href="#"
-                  >
-                    Google Cloud
-                  </a>
-                </li>
-                <li style={{ listStyle: "none" }}>
-                  <a
-                    style={{
-                      color: "black",
-                      lineHeight: "1.5rem",
-                      paddingBottom: "0.5rem",
-                      paddingTop: "0.5rem",
-                      display: "block",
-                      textDecoration: "inherit",
-                    }}
-                    href="#"
-                  >
-                    Google Workspace
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div style={{ flexBasis: "calc(20% - 8px)" }}>
-              <h3
-                style={{
-                  color: "black",
-                  fontWeight: "600",
-                  paddingBottom: "1.5rem",
-                  fontSize: "inherit",
-                }}
-              >
-                Internal Links
-              </h3>
-              <ul style={{ flexDirection: "column", display: "flex" }}>
-                <li style={{ listStyle: "none" }}>
-                  <a
-                    style={{
-                      color: "black",
-                      lineHeight: "1.5rem",
-                      paddingBottom: "0.5rem",
-                      paddingTop: "0.5rem",
-                      display: "block",
-                      textDecoration: "inherit",
-                    }}
-                    href="/documentaries/"
-                  >
-                    Documentaries
-                  </a>
-                </li>
-                <li style={{ listStyle: "none" }}>
-                  <a
-                    style={{
-                      color: "black",
-                      lineHeight: "1.5rem",
-                      paddingBottom: "0.5rem",
-                      paddingTop: "0.5rem",
-                      display: "block",
-                      textDecoration: "inherit",
-                    }}
-                    href="/themes/"
-                  >
-                    Themes
-                  </a>
-                </li>
-                <li style={{ listStyle: "none" }}>
-                  <a
-                    style={{
-                      color: "black",
-                      lineHeight: "1.5rem",
-                      paddingBottom: "0.5rem",
-                      paddingTop: "0.5rem",
-                      display: "block",
-                      textDecoration: "inherit",
-                    }}
-                    href="#"
-                  >
-                    Chrome casts
-                  </a>
+                  <Link href="#">
+                    <div
+                      style={{
+                        color: "black",
+                        lineHeight: "1.5rem",
+                        paddingBottom: "0.5rem",
+                        paddingTop: "0.5rem",
+                        display: "block",
+                        textDecoration: "inherit",
+                      }}
+                    >
+                      Chrome casts
+                    </div>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -311,94 +152,100 @@ const Footer = () => {
               </h3>
               <ul style={{ flexDirection: "column", display: "flex" }}>
                 <li style={{ listStyle: "none" }}>
-                  <a
-                    style={{
-                      color: "black",
-                      lineHeight: "1.5rem",
-                      paddingBottom: "0.5rem",
-                      paddingTop: "0.5rem",
-                      display: "block",
-                      textDecoration: "inherit",
-                    }}
-                    href="#"
-                  >
-                    Download Chrome Browser
-                  </a>
+                  <Link href="#">
+                    <div
+                      style={{
+                        color: "black",
+                        lineHeight: "1.5rem",
+                        paddingBottom: "0.5rem",
+                        paddingTop: "0.5rem",
+                        display: "block",
+                        textDecoration: "inherit",
+                      }}
+                    >
+                      Download Chrome Browser
+                    </div>
+                  </Link>
                 </li>
                 <li style={{ listStyle: "none" }}>
-                  <a
-                    style={{
-                      color: "black",
-                      lineHeight: "1.5rem",
-                      paddingBottom: "0.5rem",
-                      paddingTop: "0.5rem",
-                      display: "block",
-                      textDecoration: "inherit",
-                    }}
-                    href="#"
-                  >
-                    Chrome Browser for Enterprise
-                  </a>
+                  <Link href="#">
+                    <div
+                      style={{
+                        color: "black",
+                        lineHeight: "1.5rem",
+                        paddingBottom: "0.5rem",
+                        paddingTop: "0.5rem",
+                        display: "block",
+                        textDecoration: "inherit",
+                      }}
+                    >
+                      Chrome Browser for Enterprise
+                    </div>
+                  </Link>
                 </li>
                 <li style={{ listStyle: "none" }}>
-                  <a
-                    style={{
-                      color: "black",
-                      lineHeight: "1.5rem",
-                      paddingBottom: "0.5rem",
-                      paddingTop: "0.5rem",
-                      display: "block",
-                      textDecoration: "inherit",
-                    }}
-                    href="#"
-                  >
-                    Chrome Browser Devices
-                  </a>
+                  <Link href="#">
+                    <div
+                      style={{
+                        color: "black",
+                        lineHeight: "1.5rem",
+                        paddingBottom: "0.5rem",
+                        paddingTop: "0.5rem",
+                        display: "block",
+                        textDecoration: "inherit",
+                      }}
+                    >
+                      Chrome Browser Devices
+                    </div>
+                  </Link>
                 </li>
                 <li style={{ listStyle: "none" }}>
-                  <a
-                    style={{
-                      color: "black",
-                      lineHeight: "1.5rem",
-                      paddingBottom: "0.5rem",
-                      paddingTop: "0.5rem",
-                      display: "block",
-                      textDecoration: "inherit",
-                    }}
-                    href="#"
-                  >
-                    ChromeOS
-                  </a>
+                  <Link href="#">
+                    <div
+                      style={{
+                        color: "black",
+                        lineHeight: "1.5rem",
+                        paddingBottom: "0.5rem",
+                        paddingTop: "0.5rem",
+                        display: "block",
+                        textDecoration: "inherit",
+                      }}
+                    >
+                      ChromeOS
+                    </div>
+                  </Link>
                 </li>
                 <li style={{ listStyle: "none" }}>
-                  <a
-                    style={{
-                      color: "black",
-                      lineHeight: "1.5rem",
-                      paddingBottom: "0.5rem",
-                      paddingTop: "0.5rem",
-                      display: "block",
-                      textDecoration: "inherit",
-                    }}
-                    href="#"
-                  >
-                    Google Cloud
-                  </a>
+                  <Link href="#">
+                    <div
+                      style={{
+                        color: "black",
+                        lineHeight: "1.5rem",
+                        paddingBottom: "0.5rem",
+                        paddingTop: "0.5rem",
+                        display: "block",
+                        textDecoration: "inherit",
+                      }}
+                    >
+                      Google Cloud
+                    </div>
+                  </Link>
                 </li>
                 <li style={{ listStyle: "none" }}>
-                  <a
-                    style={{
-                      color: "black",
-                      lineHeight: "1.5rem",
-                      paddingBottom: "0.5rem",
-                      paddingTop: "0.5rem",
-                      display: "block",
-                      textDecoration: "inherit",
-                    }}
-                    href="#"
-                  >
-                    Google Workspace
-                  </a>
+                  <Link href="#">
+                    <div
+                      style={{
+                        color: "black",
+                        lineHeight: "1.5rem",
+                        paddingBottom: "0.5rem",
+                        paddingTop: "0.5rem",
+                        display: "block",
+                        textDecoration: "inherit",
+                      }}
+                    >
+                      Google Workspace
+                    </div>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -415,49 +262,224 @@ const Footer = () => {
               </h3>
               <ul style={{ flexDirection: "column", display: "flex" }}>
                 <li style={{ listStyle: "none" }}>
-                  <a
-                    style={{
-                      color: "black",
-                      lineHeight: "1.5rem",
-                      paddingBottom: "0.5rem",
-                      paddingTop: "0.5rem",
-                      display: "block",
-                      textDecoration: "inherit",
-                    }}
-                    href="/documentaries/"
-                  >
-                    Documentaries
-                  </a>
+                  <Link href="/documentaries/">
+                    <div
+                      style={{
+                        color: "black",
+                        lineHeight: "1.5rem",
+                        paddingBottom: "0.5rem",
+                        paddingTop: "0.5rem",
+                        display: "block",
+                        textDecoration: "inherit",
+                      }}
+                    >
+                      Documentaries
+                    </div>
+                  </Link>
                 </li>
                 <li style={{ listStyle: "none" }}>
-                  <a
-                    style={{
-                      color: "black",
-                      lineHeight: "1.5rem",
-                      paddingBottom: "0.5rem",
-                      paddingTop: "0.5rem",
-                      display: "block",
-                      textDecoration: "inherit",
-                    }}
-                    href="/themes/"
-                  >
-                    Themes
-                  </a>
+                  <Link href="/themes/">
+                    <div
+                      style={{
+                        color: "black",
+                        lineHeight: "1.5rem",
+                        paddingBottom: "0.5rem",
+                        paddingTop: "0.5rem",
+                        display: "block",
+                        textDecoration: "inherit",
+                      }}
+                    >
+                      Themes
+                    </div>
+                  </Link>
                 </li>
                 <li style={{ listStyle: "none" }}>
-                  <a
-                    style={{
-                      color: "black",
-                      lineHeight: "1.5rem",
-                      paddingBottom: "0.5rem",
-                      paddingTop: "0.5rem",
-                      display: "block",
-                      textDecoration: "inherit",
-                    }}
-                    href="#"
-                  >
-                    Chrome casts
-                  </a>
+                  <Link href="#">
+                    <div
+                      style={{
+                        color: "black",
+                        lineHeight: "1.5rem",
+                        paddingBottom: "0.5rem",
+                        paddingTop: "0.5rem",
+                        display: "block",
+                        textDecoration: "inherit",
+                      }}
+                    >
+                      Chrome casts
+                    </div>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div style={{ flexBasis: "calc(20% - 8px)" }}>
+              <h3
+                style={{
+                  color: "black",
+                  fontWeight: "600",
+                  paddingBottom: "1.5rem",
+                  fontSize: "inherit",
+                }}
+              >
+                Enterprise
+              </h3>
+              <ul style={{ flexDirection: "column", display: "flex" }}>
+                <li style={{ listStyle: "none" }}>
+                  <Link href="#">
+                    <div
+                      style={{
+                        color: "black",
+                        lineHeight: "1.5rem",
+                        paddingBottom: "0.5rem",
+                        paddingTop: "0.5rem",
+                        display: "block",
+                        textDecoration: "inherit",
+                      }}
+                    >
+                      Download Chrome Browser
+                    </div>
+                  </Link>
+                </li>
+                <li style={{ listStyle: "none" }}>
+                  <Link href="#">
+                    <div
+                      style={{
+                        color: "black",
+                        lineHeight: "1.5rem",
+                        paddingBottom: "0.5rem",
+                        paddingTop: "0.5rem",
+                        display: "block",
+                        textDecoration: "inherit",
+                      }}
+                    >
+                      Chrome Browser for Enterprise
+                    </div>
+                  </Link>
+                </li>
+                <li style={{ listStyle: "none" }}>
+                  <Link href="#">
+                    <div
+                      style={{
+                        color: "black",
+                        lineHeight: "1.5rem",
+                        paddingBottom: "0.5rem",
+                        paddingTop: "0.5rem",
+                        display: "block",
+                        textDecoration: "inherit",
+                      }}
+                    >
+                      Chrome Browser Devices
+                    </div>
+                  </Link>
+                </li>
+                <li style={{ listStyle: "none" }}>
+                  <Link href="#">
+                    <div
+                      style={{
+                        color: "black",
+                        lineHeight: "1.5rem",
+                        paddingBottom: "0.5rem",
+                        paddingTop: "0.5rem",
+                        display: "block",
+                        textDecoration: "inherit",
+                      }}
+                    >
+                      ChromeOS
+                    </div>
+                  </Link>
+                </li>
+                <li style={{ listStyle: "none" }}>
+                  <Link href="#">
+                    <div
+                      style={{
+                        color: "black",
+                        lineHeight: "1.5rem",
+                        paddingBottom: "0.5rem",
+                        paddingTop: "0.5rem",
+                        display: "block",
+                        textDecoration: "inherit",
+                      }}
+                    >
+                      Google Cloud
+                    </div>
+                  </Link>
+                </li>
+                <li style={{ listStyle: "none" }}>
+                  <Link href="#">
+                    <div
+                      style={{
+                        color: "black",
+                        lineHeight: "1.5rem",
+                        paddingBottom: "0.5rem",
+                        paddingTop: "0.5rem",
+                        display: "block",
+                        textDecoration: "inherit",
+                      }}
+                    >
+                      Google Workspace
+                    </div>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div style={{ flexBasis: "calc(20% - 8px)" }}>
+              <h3
+                style={{
+                  color: "black",
+                  fontWeight: "600",
+                  paddingBottom: "1.5rem",
+                  fontSize: "inherit",
+                }}
+              >
+                Internal Links
+              </h3>
+              <ul style={{ flexDirection: "column", display: "flex" }}>
+                <li style={{ listStyle: "none" }}>
+                  <Link href="/documentaries/">
+                    <div
+                      style={{
+                        color: "black",
+                        lineHeight: "1.5rem",
+                        paddingBottom: "0.5rem",
+                        paddingTop: "0.5rem",
+                        display: "block",
+                        textDecoration: "inherit",
+                      }}
+                    >
+                      Documentaries
+                    </div>
+                  </Link>
+                </li>
+                <li style={{ listStyle: "none" }}>
+                  <Link href="/themes/">
+                    <div
+                      style={{
+                        color: "black",
+                        lineHeight: "1.5rem",
+                        paddingBottom: "0.5rem",
+                        paddingTop: "0.5rem",
+                        display: "block",
+                        textDecoration: "inherit",
+                      }}
+                    >
+                      Themes
+                    </div>
+                  </Link>
+                </li>
+                <li style={{ listStyle: "none" }}>
+                  <Link href="#">
+                    <div
+                      style={{
+                        color: "black",
+                        lineHeight: "1.5rem",
+                        paddingBottom: "0.5rem",
+                        paddingTop: "0.5rem",
+                        display: "block",
+                        textDecoration: "inherit",
+                      }}
+                    >
+                      Chrome casts
+                    </div>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -485,18 +507,9 @@ const Footer = () => {
                 display: "flex",
               }}
             >
-              <a
-                className={styles.logo_wrap__Uh7uD}
-                title="Go to home page"
-                href="/"
-              >
+              <Link title="Go to home page" href="/">
                 <div
-                  className={styles.transition_colors}
-                  style={{
-                    alignItems: "center",
-                    display: "flex",
-                    position: "relative",
-                  }}
+                  className={`${styles.logo_wrap__Uh7uD} ${styles.transition_colors}`}
                 >
                   <span
                     style={{
@@ -536,94 +549,100 @@ const Footer = () => {
                     </span>
                   </span>
                 </div>
-              </a>
+              </Link>
             </div>
             <ul
               className={`${styles.flex} ${styles.items_center} ${styles.gap_8}`}
             >
               <li style={{ listStyle: "none" }}>
-                <a
-                  style={{
-                    color: "black",
-                    fontSize: "0.875rem",
-                    lineHeight: "1.25rem",
-                    whiteSpace: "nowrap",
-                    textDecoration: "none",
-                  }}
-                  href="/privacy/"
-                >
-                  Privacy Policy
-                </a>
+                <Link href="/privacy/">
+                  <div
+                    style={{
+                      color: "black",
+                      fontSize: "0.875rem",
+                      lineHeight: "1.25rem",
+                      whiteSpace: "nowrap",
+                      textDecoration: "none",
+                    }}
+                  >
+                    Privacy Policy
+                  </div>
+                </Link>
               </li>
               <li style={{ listStyle: "none" }}>
-                <a
-                  style={{
-                    color: "black",
-                    fontSize: "0.875rem",
-                    lineHeight: "1.25rem",
-                    whiteSpace: "nowrap",
-                    textDecoration: "none",
-                  }}
-                  href="/terms/"
-                >
-                  Terms and conditions
-                </a>
+                <Link href="/terms/">
+                  <div
+                    style={{
+                      color: "black",
+                      fontSize: "0.875rem",
+                      lineHeight: "1.25rem",
+                      whiteSpace: "nowrap",
+                      textDecoration: "none",
+                    }}
+                  >
+                    Terms and conditions
+                  </div>
+                </Link>
               </li>
               <li style={{ listStyle: "none" }}>
-                <a
-                  style={{
-                    color: "black",
-                    fontSize: "0.875rem",
-                    lineHeight: "1.25rem",
-                    whiteSpace: "nowrap",
-                    textDecoration: "none",
-                  }}
-                  href="/cookies/"
-                >
-                  Cookies Policy
-                </a>
+                <Link href="/cookies/">
+                  <div
+                    style={{
+                      color: "black",
+                      fontSize: "0.875rem",
+                      lineHeight: "1.25rem",
+                      whiteSpace: "nowrap",
+                      textDecoration: "none",
+                    }}
+                  >
+                    Cookies Policy
+                  </div>
+                </Link>
               </li>
               <li style={{ listStyle: "none" }}>
-                <a
-                  style={{
-                    color: "black",
-                    fontSize: "0.875rem",
-                    lineHeight: "1.25rem",
-                    whiteSpace: "nowrap",
-                    textDecoration: "none",
-                  }}
-                  href="/about/"
-                >
-                  About us
-                </a>
+                <Link href="/Linkbout/">
+                  <div
+                    style={{
+                      color: "black",
+                      fontSize: "0.875rem",
+                      lineHeight: "1.25rem",
+                      whiteSpace: "nowrap",
+                      textDecoration: "none",
+                    }}
+                  >
+                    About us
+                  </div>
+                </Link>
               </li>
               <li style={{ listStyle: "none" }}>
-                <a
-                  style={{
-                    color: "black",
-                    fontSize: "0.875rem",
-                    lineHeight: "1.25rem",
-                    whiteSpace: "nowrap",
-                    textDecoration: "none",
-                  }}
-                  href="/eula/"
-                >
-                  EULA
-                </a>
+                <Link href="/eula/">
+                  <div
+                    style={{
+                      color: "black",
+                      fontSize: "0.875rem",
+                      lineHeight: "1.25rem",
+                      whiteSpace: "nowrap",
+                      textDecoration: "none",
+                    }}
+                  >
+                    EULA
+                  </div>
+                </Link>
               </li>
               <li style={{ listStyle: "none" }}>
-                <a
-                  style={{
-                    color: "black",
-                    fontSize: "0.875rem",
-                    lineHeight: "1.25rem",
-                    whiteSpace: "nowrap",
-                    textDecoration: "none",
-                  }}
-                  href="/contact/"
-                >
-                  Contact
-                </a>
+                <Link href="/contact/">
+                  <div
+                    style={{
+                      color: "black",
+                      fontSize: "0.875rem",
+                      lineHeight: "1.25rem",
+                      whiteSpace: "nowrap",
+                      textDecoration: "none",
+                    }}
+                  >
+                    Contact
+                  </div>
+                </Link>
               </li>
             </ul>
             <div style={{ display: "block", marginLeft: "auto" }}>

@@ -37,9 +37,9 @@ const ConvertFromPdf = () => {
               <div
                 key={i}
                 className={`${styles.item} ${styles.tool}`}
-                ga360location={link.ga360location}
+                // ga360location={link.ga360location}
                 style={{
-                  transform: `translateX(${(i - index) * 50}%)`,
+                  transform: `translateX(${(i - index) * 10}%)`,
                 }}
               >
                 <img
@@ -48,9 +48,7 @@ const ConvertFromPdf = () => {
                   alt={link.imgAlt}
                 />
                 <h3 className="title">{link.title}</h3>
-                <div className={`${styles.desc} ,overflow-hidden`}>
-                  {link.desc}
-                </div>
+                <div className={`${styles.desc} `}>{link.desc}</div>
               </div>
             ))}
           </div>

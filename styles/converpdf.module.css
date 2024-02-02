@@ -12,8 +12,8 @@
 }
 .grid {
   display: flex;
-  grid-template-columns: repeat(5, minmax(0, 1fr)); /* Adjust this line */
-  gap: 1px;
+  grid-template-columns: repeat(5, minmax(0, 2fr)); /* Adjust this line */
+  grid-column-gap: 0;
 }
 .grid .item {
   position: relative;

@@ -2,51 +2,57 @@ import Navbar from "../components/Navbar";
 import styles from "../styles/index.module.css";
 import { IoIosSettings } from "react-icons/io";
 import { FaSearch } from "react-icons/fa";
+import Link from "next/link";
 
 const Header = () => {
   return (
     <header className={styles.header_wrap__mGxe1}>
       <div className={styles.header_main__Sce7b}>
         <div className="">
-          <a
-            style={{ display: "flex", maxWidth: "max-content", width: "100%" }}
-            title="Go to home page"
-            href="/"
-          >
-            <span
+          <Link href="/" title="Go to home page">
+            <div
               style={{
-                backgroundColor: "#5151ff",
-                borderRadius: "0.5rem",
-                alignItems: "center",
-                marginLeft: "10px",
-                marginRight: "5px",
-
-                paddingLeft: "0.5rem",
-                paddingRight: "0.5rem",
+                display: "flex",
+                maxWidth: "max-content",
+                width: "100%",
+                cursor: "pointer",
               }}
             >
-              <IoIosSettings
-                style={{
-                  alignItems: "center",
-                  marginTop: "2px",
-                  fontSize: "30px",
-                  color: "white",
-                }}
-              />
-            </span>
-            <div>
               <span
                 style={{
-                  fontWeight: "700",
-                  marginLeft: "2px",
-                  color: "dark",
-                  fontSize: "22px",
+                  backgroundColor: "#5151ff",
+                  borderRadius: "0.5rem",
+                  alignItems: "center",
+                  marginLeft: "10px",
+                  marginRight: "5px",
+
+                  paddingLeft: "0.5rem",
+                  paddingRight: "0.5rem",
                 }}
               >
-                ZinTools
+                <IoIosSettings
+                  style={{
+                    alignItems: "center",
+                    marginTop: "2px",
+                    fontSize: "30px",
+                    color: "white",
+                  }}
+                />
               </span>
+              <div>
+                <span
+                  style={{
+                    fontWeight: "700",
+                    marginLeft: "2px",
+                    color: "dark",
+                    fontSize: "22px",
+                  }}
+                >
+                  ZinTools
+                </span>
+              </div>
             </div>
-          </a>
+          </Link>
         </div>
         <div
           style={{
@@ -112,6 +118,7 @@ const Header = () => {
                   maxWidth: "20px",
                   minWidth: "20px",
                   width: "100%",
+                  cursor: "pointer",
                 }}
               >
                 <FaSearch />
@@ -125,6 +132,7 @@ const Header = () => {
             style={{
               fontWeight: "700",
               color: "grey",
+              cursor: "pointer",
               fontSize: "16px",
             }}
           >
@@ -139,6 +147,7 @@ const Header = () => {
               fontSize: "14px",
               backgroundColor: "#5555f1",
               borderRadius: "50px",
+              cursor: "pointer",
               padding: "10px",
             }}
           >
